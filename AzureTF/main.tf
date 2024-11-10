@@ -13,12 +13,11 @@ terraform {
 }
 
 variable "subid" {
-  #default = "97f91955-0c89-48d8-b3e5-df3e5f23f9bb"
-  default = "802348a7-fefa-4315-95cb-c63e71f06554"
+  type = string
 }
 
 variable "tenandid" {
-  default = "3f3fd244-2e4a-41e7-9d36-84d599d0b6ed"
+  type = string
 }
 
 # Configure the Microsoft Azure Provider
@@ -27,7 +26,6 @@ provider "azurerm" {
   #registry = "registry.terraform.io/hashicorp/azurerm"
   subscription_id = var.subid
   #tenant_id       = var.tenandid
-  #subscription_id = "97f91955-0c89-48d8-b3e5-df3e5f23f9bb"
   #skip_provider_registration = false
 }
 
