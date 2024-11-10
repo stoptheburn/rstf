@@ -20,6 +20,7 @@ variable "tenandid" {
   type = string
 }
 
+
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
