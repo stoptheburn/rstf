@@ -7,7 +7,7 @@ terraform {
       version = "=4.9.0"
     }
   }
-  
+
 }
 
 # Configure the Microsoft Azure Provider
@@ -18,5 +18,5 @@ provider "azurerm" {
 }
 
 variable "mySubscriptionID" {
-    type = string
+  type = string
 }
